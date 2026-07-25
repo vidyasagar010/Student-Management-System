@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Student Management System
+    </h1>
+    <div class="box">
+        <form class="form" id="student-form">
+            <div class="form-grid">
+                <label>
+                    Student ID
+                    <input type="text" id="student-id" required placeholder="Enter unique id">
+                </label>
+                <label>
+                    Full Name
+                    <input type="text" id="student-name" required placeholder="Enter student name">
+                </label>
+                <label>
+                    Father Name
+                    <input type="text" id="father-name" required placeholder="Enter father name">
+                </label>
+                <label>
+                    Mother Name
+                    <input type="text" id="mother-name" required placeholder="Enter mother name">
+                </label>
+                <label>
+                    Mobile Number
+                    <input type="tel" id="mobile-number" required placeholder="Enter mobile number">
+                </label>
+                <label>
+                    Course
+                    <input type="text" id="course" required placeholder="Enter course">
+                </label>
+                <label>
+                    Branch
+                    <input type="text" id="branch" required placeholder="Enter branch">
+                </label>
+            </div>
+            <div class="actions">
+                <button type="submit">Add Student</button>
+                <button type="button" id="clear-form">Clear</button>
+            </div>
+        </form>
+
+        <div class="search-bar">
+            <label>
+                Search students:
+                <input type="search" id="search-input" placeholder="Search by id, name, course, or branch">
+            </label>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                        <th>Mobile</th>
+                        <th>Course</th>
+                        <th>Branch</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="empty-row">
+                        <td colspan="8">No students added yet. Fill the form above and click "Add Student".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="sedrver.js"></script>
+</body>
+
+</html>
